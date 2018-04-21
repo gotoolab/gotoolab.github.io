@@ -1,29 +1,30 @@
-body{
+body {
     background: rgba(0, 0, 0, .8);
 }
-.container{
+
+.container {
     display: table;
     height: 95vh;
     width: 100%;
 }
-.landing{
+
+.landing {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 
 .landing h1,
-.landing h4{
+.landing h4 {
     font-weight: bold;
-    color: rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, .9);
     /* text-shadow: 2px 2px #fff; */
-    -webkit-text-stroke: 2px #fff;
 }
 
-.landing h1{
+.landing h1 {
     font-size: 2.6em;
 }
 
-.landing h4{
+.landing h4 {
     font-size: 1.9em;
 }
