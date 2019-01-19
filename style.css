@@ -1,29 +1,165 @@
-body {
-    background: rgba(0, 0, 0, .8);
-}
+/* ================================================
+Things that I am using
 
-.container {
-    display: table;
-    height: 95vh;
-    width: 100%;
-}
+Google Font:
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
 
-.landing {
-    display: table-cell;
-    vertical-align: middle;
+Icon Font: 
+        Entypo
+
+Colors:
+        --color-grey: #cccccc;
+        --color-jetblack: #0a0a0a;
+        --color-white: #fff;
+        -color-black: #000;
+
+================================================ */
+
+/* ================================================
+General styling and resetting the defaults
+================================================ */
+:root{
+    /* Color variables */
+    --color-grey: #cccccc;
+    --color-jetblack: #0a0a0a;
+    --color-white: #fff;
+    --color-black: #000;
+    /* Font variables */
+    --font-all : 'Roboto', sans-serif;
+    --font-brand: 'Ubuntu', sans-serif;
+    /* Images */
+    --mainBg: url('../../assets/img/BG.jpg');
+    --landTitleBg: url('../../assets/img/landTitleClip.jpeg');
+    --aboutImg: url('../../assets/img/landTitleClip.jpeg');
+}
+@-ms-viewport {
+    width: device-width
+}
+body{
+    color: var(--color-grey);
+    overflow-x: hidden;
+}
+a, blockquote, h1, h2, h3, h4, h5, li, p, section, div{
+    font-family: var(--font-all);
+}
+.brand{
+    font-family: var(--font-brand) !important;
+}
+/* ================================================
+Classes for formatting text
+================================================ */
+.italic{
+    font-style: italic;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.thin{
+    font-family: var(--font-all);
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.light{
+    font-family: var(--font-all);
+    font-weight: 300;
+}
+.regular{
+    font-family: var(--font-all);
+    font-weight: 400;
+}
+.medium{
+    font-family: var(--font-all);
+    font-weight: 500;
+}
+.bold{
+    font-family: var(--font-all);
+    font-weight: 700;
+}
+.bolder{
+    font-family: var(--font-all);
+    font-weight: 900;
+}
+.white{
+    color: var(--color-white);
+}
+.black{
+    color: var(--color-black);
+}
+.jetblack{
+    color: var(--color-jetblack);
+}
+.grey{
+    color: var(--color-grey);
+}
+.layerDark{
+    background: var(--color-jetblack);
+    opacity: .90;
+    min-height: 100vh;
+}
+/* ================================================
+Classes for formatting section & elements
+================================================ */
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.secTop{
+    padding: 100px 0 20px;
+    text-align: center;
+    color: var(--color-grey);
+}
+.subHead{
+    padding: 40px 0 20px;
     text-align: center;
 }
-
-.landing h1,
-.landing h4 {
-    font-weight: bold;
-    color: rgba(255, 255, 255, .9);
+.pgTitle{
+    /* font-weight: 100; */
+    padding: 20px 0;
+    font-size: 2.8em;
+}
+.pgDes{
+    font-size: 1.3em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/* Grid styling */
+.gridStyle1{
+    cursor: pointer;
+    text-align: center;
+    color: var(--color-grey);
+}
+.gridStyle1:hover{
+    background var(--color-black);
+    color: var(--color-white);
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
-.landing h1 {
-    font-size: 2.6em;
+.serviceTitle{
+    padding: 10px;
 }
-
-.landing h4 {
-    font-size: 1.9em;
+@media only screen and (max-width: 768px){
+    .footnote{
+        text-align: center !important;
+    }
+    .footnote .socialList{
+        float: none;
+    }
+    .pgTitle{
+        /* font-weight: 100; */
+        padding: 10px 0;
+        font-size: 2em;
+    }
+    .pgDes{
+        font-size: 1em;
+    }
+    .fullwidthContent{
+        font-size: 1em !important;
+    }
 }
