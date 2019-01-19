@@ -16,7 +16,7 @@ $(document).ready(function(){
   });
 
 //   smooth scrolling 
-$(document).ready(function(){
+$(document).ready(function() {
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
   
@@ -32,7 +32,7 @@ $(document).ready(function(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 800, function(){
+        }, 800, function() {
   
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
@@ -40,6 +40,7 @@ $(document).ready(function(){
       } // End if
     });
   });
+  
 // animated background
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'),
@@ -147,7 +148,41 @@ var canvasDots = function() {
 window.onload = function() {
     canvasDots();
 };
-
+// Contact form validator 
+$("#contactform").validate({
+    rules: {
+      name: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    submitHandler: function(form) {
+      var form = $("#contactform");
+      var submitButton = $("#submit");
+      var response = $('#response');
+      $.ajax({
+        method: "POST",
+        url: "//formspree.io/hello@gotoolab.com",
+        data: $("#contactform").serialize(),
+        dataType: "json",
+  
+        beforeSend: function() {
+          response.text('Sending....');
+        },
+        success: function(data) {
+          response.html('<i class="fas fa-check"></i> Message sent').fadeIn();
+          form.trigger('reset');
+        },
+        error: function(e) {
+          console.log(e);
+          response.text('There was an error!');
+        }
+      });
+    }
+  });
 // copyright year
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
