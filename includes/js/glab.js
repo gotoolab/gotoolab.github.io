@@ -173,7 +173,7 @@ $("#contactform").validate({
           response.text('Sending....');
         },
         success: function(data) {
-          response.html('<i class="fas fa-check"></i> Message sent').fadeIn();
+          response.html('Message sent').fadeIn();
           form.trigger('reset');
         },
         error: function(e) {

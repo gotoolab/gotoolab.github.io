@@ -15,7 +15,6 @@ Colors:
         -color-black: #000;
 
 ================================================ */
-
 /* ================================================
 General styling and resetting the defaults
 ================================================ */
@@ -101,7 +100,7 @@ Classes for formatting text
 Classes for formatting section & elements
 ================================================ */
 .left{
-    float: left;
+    float: left !important;
 }
 .right{
     float: right;
@@ -125,41 +124,6 @@ Classes for formatting section & elements
     line-height: 1.5;
     letter-spacing: 1px;
 }
-/* Grid styling */
-.gridStyle1{
-    cursor: pointer;
-    text-align: center;
-    color: var(--color-grey);
-}
-.gridStyle1:hover{
-    background var(--color-black);
-    color: var(--color-white);
-    transform: scale(1.1);
-    transition: .5s ease-in-out;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-}
-
 .serviceTitle{
     padding: 10px;
-}
-@media only screen and (max-width: 768px){
-    .footnote{
-        text-align: center !important;
-    }
-    .footnote .socialList{
-        float: none;
-    }
-    .pgTitle{
-        /* font-weight: 100; */
-        padding: 10px 0;
-        font-size: 2em;
-    }
-    .pgDes{
-        font-size: 1em;
-    }
-    .fullwidthContent{
-        font-size: 1em !important;
-    }
 }
