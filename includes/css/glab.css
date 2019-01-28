@@ -207,7 +207,6 @@ About US
 }
 
 .fullwidthContent{
-    /* color: var(--color-jetblack); */
     text-align: center;
     font-size: 1.3em;
     line-height: 1.7;
@@ -359,7 +358,6 @@ Change style with viewport
         float: none;
     }
     .pgTitle{
-        /* font-weight: 100; */
         padding: 10px 0;
         font-size: 2em;
     }
