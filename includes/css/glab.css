@@ -26,6 +26,7 @@ footer p{
     text-decoration: none;
     color: var(--color-grey);
     font-weight: 300;
+    transition: all .5s ease-in-out;
 }
 .contsmInd a:hover,
 .footer a:hover,
@@ -64,6 +65,10 @@ navigation
 /* .scrolled-nav .navbar-brand img{
     width: 100px;
 } */
+.navbar-collapse{
+    margin: 0 auto;
+    text-align: center;
+}
 /* ================================================
 Landing part / Home
 ================================================ */
@@ -140,13 +145,16 @@ Capabilities / services
     overflow: hidden;
     text-align: left;
     padding: 30px;
-    background-image: linear-gradient(to right bottom, #0a0a0a, #969696, #646464, #363636, #cccccc);
+    background: var(--color-jetblack);
     margin: 20px 10px;
     color: var(--color-white);
     border-radius: 30px;
+    opacity: .8;
 }
 .serviceInd:hover{
-    background-image: linear-gradient(to right bottom, #cacaca, #353635, #636363, #959595, #0a0a0a);
+    background: var(--color-black);
+    opacity: 1;
+    transition: 1s ease-in-out;
 }
 
 .serviceTitle{
@@ -364,4 +372,12 @@ Change style with viewport
     .tech-logo i{
         font-size: 2em;
     }
+    .serviceInd{
+        cursor: pointer;
+        overflow: hidden;
+        text-align: left;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
 }
