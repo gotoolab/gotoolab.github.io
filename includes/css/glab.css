@@ -75,10 +75,6 @@ Landing part / Home
 #landing {
     min-height: 100vh;
     background: var(--mainBg);
-    background-size: cover;
-    background-position: center;
-    background-size: cover;
-    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -376,6 +372,6 @@ Change style with viewport
         text-align: left;
         padding: 20px;
         border-radius: 20px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 15px rgba(0,0,0,0.22);
     }
-
 }

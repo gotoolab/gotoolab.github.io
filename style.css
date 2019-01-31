@@ -37,7 +37,6 @@ General styling and resetting the defaults
 }
 body{
     color: var(--color-grey);
-    overflow-x: hidden;
 }
 a, blockquote, h1, h2, h3, h4, h5, li, p, section, div{
     font-family: var(--font-all);
