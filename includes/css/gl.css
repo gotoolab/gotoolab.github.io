@@ -1,0 +1,510 @@
+/* ------------------------------------------------------------
+Gotoolab Layout general styling
+------------------------------------------------------------ */
+::selection {
+	color: var(--color-jetblack);
+	background-color: #ccc;
+}
+::-moz-selection {
+	color: var(--color-jetblack);
+	background-color: #ccc;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--color-jetblack);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--color-grey); 
+	border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-white); 
+  
+}
+/* ------------------------------------------------------------
+Header
+------------------------------------------------------------ */
+header{
+  
+}
+
+
+/* #Navigation
+================================================== */
+.nav-item{
+	padding: 0 10px;
+}
+.nav-link{
+	color: var(--color-grey) !important;
+	font-family: var(--font-all) !important;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1em;
+	border-bottom: 2px solid transparent;
+	/* padding: 10px 15px !important; */
+}
+.nav-link:hover{
+	color: var(--color-white) !important;
+	border-bottom: 2px solid var(--color-white);
+}
+.navbar-brand img{
+	width: 150px;
+}
+
+.scrolled-nav{
+	background: var(--color-jetblack) !important;
+}
+.scrolled-nav .navbar-brand img{
+	width: 90px;
+}
+.collapse.show{
+	position: relative;
+	padding: 40px 0;
+	background: var(--color-jetblack);
+}
+.navbar-collapse{
+	margin: 0 auto;
+	text-align: center;
+}
+/* ------------------------------------------------------------
+Home / Landing page
+------------------------------------------------------------ */
+
+.hmLanding{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+  text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-white);
+}
+.homeLadingBG{
+	background: linear-gradient(
+      rgba(10,10,10, .5), 
+      rgba(10,10,10, .9)
+    ),
+    url('../../assets/img/BG.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: -100;
+}
+.landTitle{
+	font-size: 3.1rem;
+	text-transform: uppercase;
+	padding: 15px 0;
+	font-weight: 900;
+	-webkit-text-stroke: 2px #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.landSlogan{
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+	font-size: .9rem;
+	display: inline-block;
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #fff;
+	padding: 15px 0;
+}
+/* avg arrow down animation */
+.arrows {
+	width: 80px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 50px;
+}
+
+.arrows path {
+	stroke: #fff;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
+/* 
+Capabilities
+*/
+#capabilities{
+	background: var(--color-jetblack);
+	color: var(--color-white);
+}
+.hLeft{
+	text-align: center;
+	padding: 40px 0;
+}
+.col-2-right {
+	width: 50%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 30px 0;
+	cursor: pointer;
+}
+.capabilitiesTitle{
+	font-size: .9rem;
+	padding: 10px 0;
+	font-weight: 300;
+}
+.col-2-right img{
+	width: 25%;
+}
+
+.secSideTitle{
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+/* How we work */
+
+.secTopTitle{
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+	padding: 120px 0 30px 0;
+}
+
+.secContCent{
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	line-height: 2;
+}
+
+.hoWorkflow{
+	padding: 20px 0;
+}
+
+.processCard{
+	padding: 30px 10px;
+	margin: 5px;	
+	text-transform: uppercase;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.processCard img{
+	width: 30%;
+}
+
+.processCard:hover{
+	transform: scale(1.2);
+}
+
+/* principles */
+#principle{
+	background: var(--color-jetblack);
+	color: var(--color-white);
+	text-align: center;
+}
+.col3{
+	padding: 20px 0 40px;
+	cursor: pointer;
+}
+
+.col3each{
+	padding: 20px 10px;
+	background: #000;
+	border: .5px solid var(--color-grey);
+	margin: 5px 0;
+	transition: 0.2s ease-in;
+}
+
+.col3each:hover{
+	box-shadow:0px 0px 10px #fff;
+	background: var(--color-jetblack);
+	transform: scale(1.02);
+}
+
+.col3Title{
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+.col3 img{
+	height: 100px;
+	width: auto;
+	padding-bottom: 40px;
+}
+.col3 p{
+	font-size: 1rem;
+	font-weight: 100;
+	line-height: 1.7;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+/* about gotoolab part */
+
+#about{
+	padding: 60px 0;
+}
+.secContRight, 
+.secContRight article{
+	font-weight: 300;
+	letter-spacing: 1.3px;
+	line-height: 1.7;
+	font-size: 1.2rem;
+	text-align: center;
+}
+/* landing page contact section */
+#contact{	
+	background: var(--color-jetblack);
+	color: var(--color-white);
+	padding: 60px 0;
+}
+form{
+	padding: 30px 0;
+}
+textarea,
+input{
+	width: 100%;
+	padding: 10px;
+	border: none;
+  background: transparent;
+  background-image: linear-gradient(to right, transparent 35%,#fff 0%);
+  background-position: bottom;
+  background-size: 38px 1px;
+  background-repeat: repeat-x;
+  color: #fff;
+}
+textarea:active,
+input:active,
+textarea:focus,
+input:focus{
+	outline:none
+}
+textarea{
+	
+}
+#submit{
+	font-size: 1.7rem;
+	color: var(--color-grey);
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	background: transparent;
+}
+#submit:hover{
+	color: var(--color-white);
+}
+#submit i{
+	font-size: 1.2rem;
+}
+/* submit responses */
+#response{
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 320px;
+  color: #fff;
+}
+* ------------------------------------------------------------
+Modal
+------------------------------------------------------------ */
+.modal-title{
+	font-family: var(--font-brand);
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--color-jetblack);
+}
+.modal-body{
+	line-height: 1.4;
+	font-family: var(--font-all);
+	font-weight: 300;
+	font-size: 1rem;
+	color: var(--color-jetblack);
+}
+.modal-body strong{
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+/* ------------------------------------------------------------
+Universal Footer 
+------------------------------------------------------------ */
+footer{
+	text-align: center;
+	background: var(--color-jetblack);
+}
+.footerContent{
+	padding: 30px 0;
+}
+.footerContent img{
+	width: 150px;
+}
+.footLogo{
+	font-size: 1.6rem;
+	color: var(--color-white);
+}
+.footSmallTitle{
+	color: var(--color-white);
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+address{
+	line-height: 1.9;
+	color: var(--color-white);
+}
+
+.footerMenu{
+	list-style: none;
+}
+.footerMenu li{
+	padding: 10px 0;
+	color: var(--color-white);
+}
+footer a,
+.socialIcon li a,
+.footerMenu li a{
+	text-decoration: none;
+	color: rgba(255,255,255, .8);
+}
+footer a:hover,
+.socialIcon li a:hover,
+.footerMenu li a:hover{
+	color: rgba(255,255,255, 1);
+	text-decoration: none;
+}
+.socialIcon{
+	padding: 20px 0;
+}
+.socialIcon i{
+	font-size: 1.5rem;
+	transition: .3s ease-in-out;
+}
+.socialIcon i:hover{
+	transform: scale(1.3);
+}
+.socialIcon li{
+	list-style: none;
+	display: inline;
+}
+.socialIcon li a {
+	padding: 10px;
+}
+.copyright{
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: var(--color-white);
+	margin-top: 10px;
+	padding: 20px 0;
+}
+
+/* ------------------------------------------------------------
+Scale up
+------------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+		.bigTitle{
+			font-size: 4vw;
+			letter-spacing: 5px;
+			line-height: 1.3;
+			font-stretch: expanded;
+		}
+		/* main landing part  */
+		.landTitle{
+			font-size: 5rem;
+			text-transform: uppercase;
+			padding: 10px 0;
+		}
+		.landSlogan{
+			font-weight: 100;
+			text-transform: uppercase;
+			letter-spacing: 2.4px;
+			font-size: 1.7rem;
+			display: inline-block;
+			border-bottom: 2px solid #fff;
+			border-top: 2px solid #fff;
+			padding: 10px 0;
+		}
+	
+	/* Landing capabilities part */
+		.contentRight{
+			
+		}
+		.wrap-1{
+			padding: 100px 0;
+			overflow: hidden;
+		}
+		.hLeft{
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			-webkit-box-align: center;
+		}
+		.capabilitiesTitle{
+			font-size: 1.5rem;
+		}
+		.secSideTitle{
+			text-align: right;
+			line-height: 1.2;
+			width: 100%;
+		}
+		/* about */
+		.secContRight, 
+		.secContRight article{
+			text-align: left;
+		}
+		/* contact form */
+		form{
+			padding: 100px 0;
+		}
+		/* footer */
+		footer{
+			text-align: left;
+		}
+  }
+

@@ -1,19 +1,24 @@
-/* ================================================
-Things that I am using
-
+/*
+Styling Guideline
 Google Font:
         font-family: 'Roboto', sans-serif;
         font-family: 'Ubuntu', sans-serif;
 
 Icon Font: 
-        Entypo
+        
 
 Colors:
         --color-grey: #cccccc;
         --color-jetblack: #0a0a0a;
         --color-white: #fff;
         -color-black: #000;
-================================================ */
+
+
+*/
+
+/* ------------------------------------------------------------
+Reset Default styling 
+------------------------------------------------------------ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,6 +46,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background:rgba(0,0,0,0.03);
+}
+html {
+    scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
@@ -57,117 +66,122 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* ------------------------------------------------------------
+Typography
+------------------------------------------------------------ */
+a{
+	color: rgba(0,0,0, .8);
+}
+a:hover{
+	color: var(--color-jetblack);
+}
+article{
+	font-size: .9rem;
+	letter-spacing: 1;
+	line-height: 1.3em;	
+}
+a, article, body, p, div{
+	font-family: var(--font-all);
+}
+blockquote{
+	font-size: .9rem;
+	letter-spacing: 1;
+	line-height: 1.3em;
+	font-style: italic;	
+}
+div{
 
+}
+h1{
+	font-size: 3.2rem;
+}
+h2{
+	font-size: 1.8rem;
+}
+h3{
+	font-size: 1.5rem;
+}
+h4{
+	font-size: 1.3rem;
+}
+h5,h6{
+	font-size: .8rem;
+}
+h1,h2,h3,{
+	font-family: var(--font-brand);
+}
+h4,h5{
+	font-family: var(--font-all);
+}
+hr{
+	
+}
 
-/* ================================================
-General styling
-================================================ */
+p{
+	font-size: 1rem;
+	line-height: 1.3em;
+}
+
+/* ------------------------------------------------------------
+Variables
+------------------------------------------------------------ */
 :root{
-    /* Color variables */
     --color-grey: #cccccc;
     --color-jetblack: #0a0a0a;
     --color-white: #fff;
     --color-black: #000;
-    /* Font variables */
     --font-all : 'Roboto', sans-serif;
     --font-brand: 'Ubuntu', sans-serif;
-    /* Images */
-    --mainBg: url('../../assets/img/BG.jpg');
-    --landTitleBg: url('../../assets/img/landTitleClip.jpeg');
-    --aboutImg: url('../../assets/img/landTitleClip.jpeg');
+    --landBg: url('assets/img/BG.jpg');
 }
-@-ms-viewport {
-    width: device-width
+
+/* ------------------------------------------------------------
+Images
+------------------------------------------------------------ */
+img{
+	width: 100%;
+	height: auto;
 }
-body{
-    color: var(--color-grey);
-    overflow-x: hidden;
+/* ------------------------------------------------------------
+General styling
+------------------------------------------------------------ */
+.center{
+	text-align: center;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
 }
-a, blockquote, h1, h2, h3, h4, h5, li, p, section, div{
-    font-family: var(--font-all);
+.fRight{
+	float: right;
 }
-.brand{
-    font-family: var(--font-brand) !important;
+.titleFoc{
+	font-weight: 600;
 }
-/* ================================================
-Classes for formatting text
-================================================ */
-.italic{
-    font-style: italic;
+
+/* ------------------------------------------------------------
+Display Table option 
+------------------------------------------------------------ */
+.disTable{
+	display: table-row;
+	width: 100%;
 }
-.uppercase{
-    text-transform: uppercase;
+
+.tCell{
+	display: table-cell;
+	vertical-align: middle;
 }
-.thin{
-    font-family: var(--font-all);
-    font-weight: 100;
-    letter-spacing: 3px;
+
+/* ------------------------------------------------------------
+Padding option
+------------------------------------------------------------ */
+.rp10{
+	padding-right: 10px;
 }
-.light{
-    font-family: var(--font-all);
-    font-weight: 300;
+.row{
+	clear: both;
 }
-.regular{
-    font-family: var(--font-all);
-    font-weight: 400;
-}
-.medium{
-    font-family: var(--font-all);
-    font-weight: 500;
-}
-.bold{
-    font-family: var(--font-all);
-    font-weight: 700;
-}
-.bolder{
-    font-family: var(--font-all);
-    font-weight: 900;
-}
-.white{
-    color: var(--color-white);
-}
-.black{
-    color: var(--color-black);
-}
-.jetblack{
-    color: var(--color-jetblack);
-}
-.grey{
-    color: var(--color-grey);
-}
-.layerDark{
-    background: var(--color-jetblack);
-    opacity: .90;
-    min-height: 100vh;
-}
-/* ================================================
-Classes for formatting section & elements
-================================================ */
-.left{
-    float: left !important;
-}
-.right{
-    float: right;
-}
-.secTop{
-    padding: 100px 0 20px;
-    text-align: center;
-    color: var(--color-grey);
-}
-.subHead{
-    padding: 40px 0 20px;
-    text-align: center;
-}
-.pgTitle{
-    /* font-weight: 100; */
-    padding: 20px 0;
-    font-size: 2.8em;
-}
-.pgDes{
-    font-size: 1.3em;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-.serviceTitle{
-    padding: 10px;
+
+/* Default Override */
+.btn-primary{
+	background: var(--color-jetblack) !important;
 }
