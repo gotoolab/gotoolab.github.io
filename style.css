@@ -47,6 +47,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background:rgba(0,0,0,0.03);
+	overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
