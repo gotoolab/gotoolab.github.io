@@ -44,13 +44,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html, body{
+	overflow-x: hidden;
+}
 body {
 	line-height: 1;
 	background:rgba(0,0,0,0.03);
-	overflow-x: hidden;
 }
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 ol, ul {
 	list-style: none;
