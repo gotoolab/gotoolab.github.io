@@ -30,7 +30,8 @@
                 <!-- Brand -->
                 <a class="navbar-brand" href="index.html"><img src="assets/img/logoWhite.png" alt="GotooLab"></a>
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler text-light" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Navbar links -->
@@ -280,11 +281,11 @@
                             <input id="leadName" type="text" name="name" placeholder="Your Name">
                             <br><br>
                             <input id="email" type="email" name="_replyto" placeholder="Your Email">
-                            <input type="hidden" name="_subject" value="Website contact" />
                             <br><br>
-                            <input id="subject" type="text" name="subject" placeholder="Subject">
+                            <input id="subject" type="text" name="_subject" placeholder="Subject">
                             <br><br>
-                            <textarea id="message" name="msg" placeholder="Your Message" style="height:200px"></textarea>
+                            <textarea id="message" name="msg" placeholder="Your Message"
+                                style="height:200px"></textarea>
                             <br>
                             <input id="submit" type="submit" value="Send">
                             <input type="hidden" name="_next" value="" />
@@ -305,45 +306,86 @@
     </main>
     <!-- end of the whole content area -->
     <!-- Modal content -->
-    <div class="modal fade" id="careercont" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="careercont" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content"> 
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Career</h5> 
+                    <h5 class="modal-title">Career</h5>
                 </div>
                 <div class="modal-body">
-                    IF you are a Programmer, Creative Designer, SEO Expert or Extensive Researcher feel free to email us your resume at <a href="mailto:hello@gotoolab.com?subject=Web Contact">hello@gotoolab.com</a>
+                    IF you are a Programmer, Creative Designer, SEO Expert or Extensive Researcher feel free to email us
+                    your resume at <a href="mailto:hello@gotoolab.com?subject=Web Contact">hello@gotoolab.com</a>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss = "modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- career modal -->
-    <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content"> 
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Privacy Policy</h5> 
+                    <h5 class="modal-title">Privacy Policy</h5>
                 </div>
                 <div class="modal-body">
-                    GotooLab respects your privacy and is committed to protect your personal information that you share with us. Generally, you can browse through our website without giving us any information about yourself. We do not collect any information about you unless you choose to provide that information. We may share necessary data with other Government agencies and departments. However, information collected by us is used only for official purposes, internal reviews, improvement of the content of our website, customization of the content and layout of our website and to contact users. We do not use, share or pass on your information for commercial purposes. All record keepers face the possibility of disclosure of their records in some civil, criminal, or administrative matter. We may be required to disclose personal information in response to valid legal processes such as a search warrant, or court order. Disclosures may also be necessary to protect the legal rights or during emergencies if physical safety is believed to be at risk. What Information about Users do we collect? We consider any information that could reasonably be used to identify you as "personally identifying information." GotooLab does not retain personal identifiable information about you when you visit our website unless you choose to provide such information to us (i.e. sending an e-mail, participating in a survey, responding to a feedback or "contact us", etc.). Government departments, agencies and organizations may request personally identifiable information from you in order to provide requested services however, such information is handled as in the case of an in-person visit to that same department, agency or organization.
+                    GotooLab respects your privacy and is committed to protect your personal information that you share
+                    with us. Generally, you can browse through our website without giving us any information about
+                    yourself. We do not collect any information about you unless you choose to provide that information.
+                    We may share necessary data with other Government agencies and departments. However, information
+                    collected by us is used only for official purposes, internal reviews, improvement of the content of
+                    our website, customization of the content and layout of our website and to contact users. We do not
+                    use, share or pass on your information for commercial purposes. All record keepers face the
+                    possibility of disclosure of their records in some civil, criminal, or administrative matter. We may
+                    be required to disclose personal information in response to valid legal processes such as a search
+                    warrant, or court order. Disclosures may also be necessary to protect the legal rights or during
+                    emergencies if physical safety is believed to be at risk. What Information about Users do we
+                    collect? We consider any information that could reasonably be used to identify you as "personally
+                    identifying information." GotooLab does not retain personal identifiable information about you when
+                    you visit our website unless you choose to provide such information to us (i.e. sending an e-mail,
+                    participating in a survey, responding to a feedback or "contact us", etc.). Government departments,
+                    agencies and organizations may request personally identifiable information from you in order to
+                    provide requested services however, such information is handled as in the case of an in-person visit
+                    to that same department, agency or organization.
                     <br><br>
                     <strong>Electronic Communications</strong>
                     <br> <br>
-                    If you send us an electronic mail message with a question or comment that contains personally identifying information, or fill out a form that e-mails us information, we will use this personally identifying information only to respond to your request. We may redirect your message to another person who is in a better position to respond to your query or comment. All e-mail messages received contain the e-mail addresses of persons who voluntarily communicated with or requested information from us. Your e-mail addresses are not sold, leased or shared with any non-governmental or commercial entities without your consent. When a user has given us their e-mail address for purposes of communicating with or requesting information from us, that communication becomes part of the public record and may be subject to public inspection and copying if not protected by law. Information submitted via e-mail or web forms may be at risk of being intercepted, read or modified. You are advised not to pass on any personal and confidential information such as security passwords and credit card numbers while using this website unless specifically required by an authorized person. GotooLab shall not be liable for any misuse or loss of any such information.
+                    If you send us an electronic mail message with a question or comment that contains personally
+                    identifying information, or fill out a form that e-mails us information, we will use this personally
+                    identifying information only to respond to your request. We may redirect your message to another
+                    person who is in a better position to respond to your query or comment. All e-mail messages received
+                    contain the e-mail addresses of persons who voluntarily communicated with or requested information
+                    from us. Your e-mail addresses are not sold, leased or shared with any non-governmental or
+                    commercial entities without your consent. When a user has given us their e-mail address for purposes
+                    of communicating with or requesting information from us, that communication becomes part of the
+                    public record and may be subject to public inspection and copying if not protected by law.
+                    Information submitted via e-mail or web forms may be at risk of being intercepted, read or modified.
+                    You are advised not to pass on any personal and confidential information such as security passwords
+                    and credit card numbers while using this website unless specifically required by an authorized
+                    person. GotooLab shall not be liable for any misuse or loss of any such information.
                     <br> <br>
                     <strong>Cookies</strong>
                     <br> <br>
-                    A cookie is a small data file that certain web sites write to your hard drive when you visit them. A cookie file can contain information such as a user ID that the site uses to track the pages you've visited, but the only personal information a cookie can contain is information you supply yourself. A cookie can't read data off your hard drive or read cookie files created by other sites. At present no parts of this websites use cookies to track user traffic patterns. We may use cookies in future in order to determine the usefulness of our website information to our users and to see how effective our navigational structure is in helping users reach that information.
+                    A cookie is a small data file that certain web sites write to your hard drive when you visit them. A
+                    cookie file can contain information such as a user ID that the site uses to track the pages you've
+                    visited, but the only personal information a cookie can contain is information you supply yourself.
+                    A cookie can't read data off your hard drive or read cookie files created by other sites. At present
+                    no parts of this websites use cookies to track user traffic patterns. We may use cookies in future
+                    in order to determine the usefulness of our website information to our users and to see how
+                    effective our navigational structure is in helping users reach that information.
                     <br><br>
                     <strong>Links to Other Sites</strong>
                     <br> <br>
-                    This website includes links to websites operated by other agencies, non-profit organizations and private businesses. When you link to another site, this Privacy Policy will not apply, however, you may be subject to the Privacy Policy of that new website, if one exists. GotooLab is not in any way responsible for the privacy practices or content of external websites.
+                    This website includes links to websites operated by other agencies, non-profit organizations and
+                    private businesses. When you link to another site, this Privacy Policy will not apply, however, you
+                    may be subject to the Privacy Policy of that new website, if one exists. GotooLab is not in any way
+                    responsible for the privacy practices or content of external websites.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss = "modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -405,6 +447,27 @@
         <!-- end of the footer container -->
     </footer>
     <!-- end of the universal footer -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v3.2'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="1019876354832735" theme_color="#101010">
+    </div>
 
     <!-- all of the imported scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -421,8 +484,8 @@
     <script src="includes/js/gl.js"></script>
 
     <script>
-        $(function() {
-          AOS.init();
+        $(function () {
+            AOS.init();
         });
     </script>
 

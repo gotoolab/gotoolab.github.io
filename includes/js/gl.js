@@ -36,7 +36,7 @@ $("#contactform").validate({
         var response = $('#response');
         $.ajax({
             method: "POST",
-            url: "//formspree.io/hello@gotoolab.com",
+            url: "//formspree.io/nishuvo@gotoolab.com",
             data: $("#contactform").serialize(),
             dataType: "json",
 
