@@ -36,7 +36,7 @@ $("#contactform").validate({
       var response = $('#response');
       $.ajax({
         method: "POST",
-        url: "//formspree.io/nishuvo@gotoolab.com",
+        url: "https://www.briskforms.com/go/fb4684c801a6bfc76ecb6d07cbe7a7ec",
         data: $("#contactform").serialize(),
         dataType: "json",
   
