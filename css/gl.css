@@ -228,15 +228,8 @@ Capabilities
 	padding: 30px 10px;
 	margin: 5px;	
 	text-transform: uppercase;
-	transition: .5s ease-in-out;
+	transition: .3s ease-in-out;
 	cursor: pointer;
-}
-.numbpro{
-	font-size: .8em;
-	font-weight: 100;
-	padding: 5px;
-	/* border: 1px solid var(--color-jetblack); */
-	border-radius: 50%;
 }
 .processCard img{
 	width: 30%;
@@ -244,6 +237,7 @@ Capabilities
 
 .processCard:hover{
 	transform: scale(1.2);
+	font-weight: 600;
 }
 
 /* principles */
