@@ -19,19 +19,19 @@ Gotoolab Layout general styling
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--color-grey); 
+	background: var(--color-grey);
 	border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--color-white); 
-  
+	background: var(--color-white);
+
 }
 /* ------------------------------------------------------------
 Header
 ------------------------------------------------------------ */
 header{
-  
+
 }
 
 
@@ -75,7 +75,9 @@ header{
 /* ------------------------------------------------------------
 Home / Landing page
 ------------------------------------------------------------ */
-
+.hide{
+	display: none;
+}
 .hmLanding{
 	position: relative;
 	width: 100%;
@@ -89,7 +91,7 @@ Home / Landing page
 }
 .homeLadingBG{
 	background: linear-gradient(
-      rgba(10,10,10, .5), 
+      rgba(10,10,10, .5),
       rgba(10,10,10, .9)
     ),
     url('../../assets/img/BG.jpg');
@@ -134,9 +136,9 @@ Home / Landing page
 .arrows path {
 	stroke: #fff;
 	fill: transparent;
-	stroke-width: 1px;	
+	stroke-width: 1px;
 	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+	-webkit-animation: arrow 2s infinite;
 }
 
 @keyframes arrow
@@ -165,11 +167,11 @@ Home / Landing page
 	-webkit-animation-delay:-0.5s;
 }
 
-.arrows path.a3 {	
+.arrows path.a3 {
 	animation-delay:0s;
 	-webkit-animation-delay:0s;
 }
-/* 
+/*
 Capabilities
 */
 #capabilities{
@@ -226,7 +228,7 @@ Capabilities
 
 .processCard{
 	padding: 30px 10px;
-	margin: 5px;	
+	margin: 5px;
 	text-transform: uppercase;
 	transition: .3s ease-in-out;
 	cursor: pointer;
@@ -288,7 +290,7 @@ Capabilities
 #about{
 	padding: 60px 0;
 }
-.secContRight, 
+.secContRight,
 .secContRight article{
 	font-weight: 300;
 	letter-spacing: 1.3px;
@@ -297,7 +299,7 @@ Capabilities
 	text-align: center;
 }
 /* landing page contact section */
-#contact{	
+#contact{
 	background: var(--color-jetblack);
 	color: var(--color-white);
 	padding: 60px 0;
@@ -324,7 +326,7 @@ input:focus{
 	outline:none
 }
 textarea{
-	
+
 }
 #submit{
 	font-size: 1.7rem;
@@ -370,7 +372,7 @@ Modal
 	font-weight: 400;
 }
 /* ------------------------------------------------------------
-Universal Footer 
+Universal Footer
 ------------------------------------------------------------ */
 footer{
 	text-align: center;
@@ -445,7 +447,7 @@ footer a:hover,
 /* ------------------------------------------------------------
 Scale up
 ------------------------------------------------------------ */
-@media screen and (min-width: 768px) {	
+@media screen and (min-width: 768px) {
 	.bigTitle{
 			font-size: 3.5vw;
 			letter-spacing: 5px;
@@ -471,10 +473,10 @@ Scale up
 			border-top: 2px solid #fff;
 			padding: 10px 0;
 		}
-	
+
 	/* Landing capabilities part */
 		.contentRight{
-			
+
 		}
 		.wrap-1{
 			padding: 100px 0;
@@ -497,7 +499,7 @@ Scale up
 			width: 100%;
 		}
 		/* about */
-		.secContRight, 
+		.secContRight,
 		.secContRight article{
 			text-align: left;
 		}
@@ -510,4 +512,3 @@ Scale up
 			text-align: left;
 		}
   }
-
