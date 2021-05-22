@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="GotooLab, an IT company specialized in developing custom websites, mobile applications, enterprise software and diverse digital products.">
-    <meta name="keywords" content="gotoolab, development, appdevelopment, webdevelopment, softwaredevelopment, techl, smallbusiness, business, informationtechnology, solutions, consultancy, software, customsoftware, apps, mobile, entrepreneur, webapplication, ecommerce, businesssolutions, strategy, contractor, gotoolab">
+    <meta name="keywords" content="gotoolab, development, appdevelopment, webdevelopment, softwaredevelopment, tech, smallbusiness, business, informationtechnology, solutions, consultancy, software, customsoftware, apps, mobile, entrepreneur, webapplication, ecommerce, businesssolutions, strategy, contractor, gotoolab">
     <meta name="author" content="GOTOOLAB">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0a0a0a">
@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/gl.css">
 </head>
@@ -278,6 +279,40 @@
             <!-- end of the fluid container -->
         </section>
         <!-- end of the about gotoolab section -->
+        <section id="clients">
+            <div class="container container-fluid">
+                <div class="col-12">
+                    <h2 class="sliderTitle">Our <span class="titleFoc">Clients</span></h2>
+                </div>
+                <!-- end of the title section -->
+                <div class="clientSlider">
+                    <div>
+                        <img src="assets/clients/Ahoroni.png" alt="Ahoroni">
+                    </div>
+                    <div>
+                        <img src="assets/clients/CBD.png" alt="Centre For Building Design">
+                    </div>
+                    <div>
+                        <img src="assets/clients/ATS.png" alt="Advanced Technical Services">
+                    </div>
+                    <div>
+                        <img src="assets/clients/CPN.png" alt="Clipping Path Ninja">
+                    </div>
+                    <div>
+                        <img src="assets/clients/ccl.png" alt="Craft & Cooking Lab">
+                    </div>
+                    <div>
+                        <img src="assets/clients/RTI.png" alt="Rashmoyee Trade International">
+                    </div>
+                    <div>
+                        <img src="assets/clients/BNC.png" alt="Baking & Cooking">
+                    </div>
+                </div>
+                <!-- end of the client slider -->
+            </div>
+            <!-- end of the container and container fluid -->
+        </section>
+        <!-- end of the clients worked with section -->
         <section id="contact">
             <div class="container container-fluid">
                 <div class="row">
@@ -442,8 +477,8 @@
                     <h4 class="footSmallTitle">Contact</h4>
                     <!-- end of contact -->
                     <ul class="footerMenu">
-                        <li>USA : <a href="tel:+12407796381">+1 240 779 6381 </a></li>
-                        <li>BD : <a href="tel:+8809611699302">+88 09611 699302 </a></li>
+                        <li>Phone : <a href="tel:+8809611699302">+88 09611 699302 </a></li>
+                        <li>Hotline : <a href="tel:+8801735498172">+88 01735 498172 </a></li>
                         <li><a href="mailto:hello@gotoolab.com?subject=Web Contact">hello@gotoolab.com</a></li>
                     </ul>
                 </div>
@@ -498,7 +533,38 @@
             AOS.init();
         });
     </script>
-
+    <!-- tiny slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+    <script>
+        var slider = tns({
+            container: '.clientSlider',
+            autoHeight: false,
+            gutter: 10,
+            items: 2,
+            autoplayButtonOutput: false,
+            nav: false,
+            touch: true,
+            mouseDrag: true,
+            arrowKeys: true,
+            controls: false,
+            autoplay: true,
+            speed: 400,
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 3
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 6
+                }
+            }
+        });
+    </script>
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135642982-1"></script>
     <script>

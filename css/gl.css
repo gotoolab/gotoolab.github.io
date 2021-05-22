@@ -298,6 +298,20 @@ Capabilities
 	font-size: 1.2rem;
 	text-align: center;
 }
+/* Our clients area */
+.sliderTitle{
+	
+	text-align: center;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.clientSlider {
+	padding: 80px 0;
+}
+/* .clientSlider img{
+	height: 100px;
+	width: auto;
+} */
 /* landing page contact section */
 #contact{
 	background: var(--color-jetblack);
